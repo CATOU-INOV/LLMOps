@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+*.pyc
+*.pyo
+.env
+data/chroma_db/
+*.pt
+*.bin
+*.safetensors
+logs/
+htmlcov/
+.coverage
+tests/

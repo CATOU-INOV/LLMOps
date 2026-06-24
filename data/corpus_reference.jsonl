@@ -1,0 +1,20 @@
+{"prompt": "Quel est le délai de retour ?", "longueur_prompt": 6, "longueur_reponse": 15, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Comment suivre ma commande ?", "longueur_prompt": 5, "longueur_reponse": 18, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Puis-je modifier mon adresse de livraison ?", "longueur_prompt": 7, "longueur_reponse": 20, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Comment obtenir un remboursement ?", "longueur_prompt": 5, "longueur_reponse": 22, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Livrez-vous à l'international ?", "longueur_prompt": 4, "longueur_reponse": 16, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Que faire si mon colis est endommagé ?", "longueur_prompt": 7, "longueur_reponse": 25, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Comment annuler une commande ?", "longueur_prompt": 5, "longueur_reponse": 20, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Proposez-vous des cartes cadeau ?", "longueur_prompt": 5, "longueur_reponse": 18, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Sous quel délai suis-je remboursé ?", "longueur_prompt": 7, "longueur_reponse": 19, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Combien de jours pour retourner un article ?", "longueur_prompt": 8, "longueur_reponse": 16, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Mon colis n'est pas arrivé, que faire ?", "longueur_prompt": 8, "longueur_reponse": 22, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Peut-on se faire livrer en Europe ?", "longueur_prompt": 7, "longueur_reponse": 18, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Quel est le montant maximum d'une carte cadeau ?", "longueur_prompt": 9, "longueur_reponse": 16, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "J'ai reçu un article cassé, comment procéder ?", "longueur_prompt": 8, "longueur_reponse": 24, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Peut-on annuler après 3 heures ?", "longueur_prompt": 6, "longueur_reponse": 20, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Comment suivre l'expédition de ma commande ?", "longueur_prompt": 7, "longueur_reponse": 19, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Quel délai pour un remboursement après retour ?", "longueur_prompt": 8, "longueur_reponse": 21, "nb_docs_rag_trouves": 3, "hors_domaine": false}
+{"prompt": "Y a-t-il des frais de livraison internationale ?", "longueur_prompt": 7, "longueur_reponse": 17, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Comment modifier une adresse après commande ?", "longueur_prompt": 7, "longueur_reponse": 20, "nb_docs_rag_trouves": 2, "hors_domaine": false}
+{"prompt": "Quels pays sont couverts par la livraison ?", "longueur_prompt": 7, "longueur_reponse": 16, "nb_docs_rag_trouves": 2, "hors_domaine": false}

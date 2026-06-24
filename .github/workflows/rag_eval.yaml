@@ -1,0 +1,46 @@
+name: RAG Evaluation
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"  # tous les lundis à 2h UTC
+  workflow_dispatch:       # déclenchement manuel depuis l'onglet Actions
+
+jobs:
+  rag-eval:
+    name: Évaluation RAG + log Langfuse
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-eval-${{ hashFiles('requirements*.txt') }}
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-eval-${{ hashFiles('src/**/*.py') }}
+
+      - name: Installer les dépendances
+        run: |
+          pip install chromadb sentence-transformers rouge-score langfuse python-dotenv
+
+      - name: Lancer l'évaluation RAG
+        env:
+          LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
+          LANGFUSE_SECRET_KEY: ${{ secrets.LANGFUSE_SECRET_KEY }}
+          LANGFUSE_HOST: ${{ secrets.LANGFUSE_HOST }}
+        run: python -m evaluation.evaluer_rag
+
+      - name: Upload rapport évaluation
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-eval-rag
+          path: evaluation/rapport_eval.json

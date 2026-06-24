@@ -1,0 +1,17 @@
+{"id": "eval-01", "question": "Sous quel délai puis-je retourner un article ?", "reponse_reference": "Vous pouvez retourner tout article dans un délai de 30 jours suivant la réception.", "docs_pertinents": ["faq-01"]}
+{"id": "eval-02", "question": "Comment suivre l'expédition de ma commande ?", "reponse_reference": "Un email de confirmation avec un lien de suivi vous est envoyé dès l'expédition.", "docs_pertinents": ["faq-02"]}
+{"id": "eval-03", "question": "Puis-je changer mon adresse de livraison après avoir commandé ?", "reponse_reference": "L'adresse peut être modifiée uniquement si la commande n'a pas encore été expédiée.", "docs_pertinents": ["faq-03"]}
+{"id": "eval-04", "question": "Combien de temps pour être remboursé après un retour ?", "reponse_reference": "Le remboursement est effectué sous 5 à 10 jours ouvrés après réception de l'article retourné.", "docs_pertinents": ["faq-04"]}
+{"id": "eval-05", "question": "Livrez-vous en dehors de la France ?", "reponse_reference": "Nous livrons dans 30 pays avec des délais de 7 à 15 jours ouvrés.", "docs_pertinents": ["faq-05"]}
+{"id": "eval-06", "question": "Mon colis est arrivé abîmé, que dois-je faire ?", "reponse_reference": "Prenez des photos du colis et contactez notre support dans les 48h pour un renvoi gratuit.", "docs_pertinents": ["faq-06"]}
+{"id": "eval-07", "question": "Comment annuler une commande que je viens de passer ?", "reponse_reference": "Une commande peut être annulée dans les 2 heures suivant sa validation.", "docs_pertinents": ["faq-07"]}
+{"id": "eval-08", "question": "Puis-je offrir une carte cadeau à quelqu'un ?", "reponse_reference": "Oui, des cartes cadeau de 10 à 200 € sont disponibles sur notre site.", "docs_pertinents": ["faq-08"]}
+{"id": "eval-09", "question": "Quel est le délai de retour pour un article reçu il y a 25 jours ?", "reponse_reference": "Vous êtes dans le délai de 30 jours, vous pouvez retourner l'article.", "docs_pertinents": ["faq-01"]}
+{"id": "eval-10", "question": "Je n'ai pas reçu d'email de suivi pour ma commande.", "reponse_reference": "Un email avec un lien de suivi est envoyé dès l'expédition de votre commande.", "docs_pertinents": ["faq-02"]}
+{"id": "eval-11", "question": "Mon remboursement n'est pas arrivé après 12 jours.", "reponse_reference": "Le délai standard est de 5 à 10 jours ouvrés après réception du retour.", "docs_pertinents": ["faq-04"]}
+{"id": "eval-12", "question": "Livraison au Canada, c'est possible ?", "reponse_reference": "Nous livrons dans 30 pays avec des délais de 7 à 15 jours ouvrés selon la destination.", "docs_pertinents": ["faq-05"]}
+{"id": "eval-13", "question": "J'ai commandé il y a 3 heures, puis-je encore annuler ?", "reponse_reference": "Non, l'annulation n'est possible que dans les 2 heures suivant la validation.", "docs_pertinents": ["faq-07"]}
+{"id": "eval-14", "question": "Quel est le montant maximum d'une carte cadeau ?", "reponse_reference": "Les cartes cadeau vont de 10 à 200 €.", "docs_pertinents": ["faq-08"]}
+{"id": "eval-15", "question": "Y a-t-il des frais pour le renvoi d'un colis endommagé ?", "reponse_reference": "Non, le renvoi est gratuit si le colis est endommagé et signalé dans les 48h.", "docs_pertinents": ["faq-06"]}
+{"id": "eval-hd-01", "question": "Quelle est la recette de la quiche lorraine ?", "reponse_reference": "Je n'ai pas l'information.", "docs_pertinents": []}
+{"id": "eval-hd-02", "question": "Quel temps fait-il à Paris aujourd'hui ?", "reponse_reference": "Je n'ai pas l'information.", "docs_pertinents": []}

@@ -1,0 +1,20 @@
+groups:
+  - name: llmops_alertes
+    rules:
+      - alert: APILatenceElevee
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{handler="/generate"}[5m])) > 30
+        for: 2m
+        annotations:
+          summary: "Latence p95 /generate > 30s depuis 2 minutes"
+
+      - alert: RAGDocumentsChute
+        expr: rate(rag_docs_retrieved_total[5m]) == 0
+        for: 5m
+        annotations:
+          summary: "Aucun document RAG retrouvé depuis 5 minutes — ChromaDB inaccessible ?"
+
+      - alert: APIIndisponible
+        expr: up{job="llmops-api"} == 0
+        for: 1m
+        annotations:
+          summary: "L'API FastAPI ne répond plus à Prometheus"

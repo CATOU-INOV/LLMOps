@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+data/chroma_db/
+*.pt
+*.bin
+*.safetensors
+htmlcov/
+.coverage
+logs/
+*.log
+evaluation/rapport_eval.json
+.mypy_cache/
+.ruff_cache/
+*.DS_Store
