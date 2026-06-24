@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
-from prometheus_client import Counter, Gauge, Histogram
+from prometheus_client import Counter, Histogram
 from prometheus_fastapi_instrumentator import Instrumentator
 from pydantic import BaseModel, Field
 from sentence_transformers import CrossEncoder, SentenceTransformer
@@ -63,6 +63,7 @@ def _init_langfuse():
     if pk.startswith("pk-lf-") and not pk.endswith("REMPLACER") and sk.startswith("sk-lf-"):
         try:
             from langfuse import Langfuse
+
             client = Langfuse()
             client.auth_check()
             logger.info("Langfuse connecté.")
@@ -121,6 +122,7 @@ Instrumentator().instrument(app).expose(app)
 
 # ── Schémas Pydantic ─────────────────────────────────────────────────────────
 
+
 class RequeteGeneration(BaseModel):
     prompt: str = Field(..., min_length=1)
     nb_tokens_max: int = Field(200, ge=1, le=500)
@@ -141,6 +143,7 @@ class ReponseHealth(BaseModel):
 
 # ── Gestionnaire erreur validation ───────────────────────────────────────────
 
+
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request, exc):
     return JSONResponse(
@@ -150,6 +153,7 @@ async def validation_exception_handler(request, exc):
 
 
 # ── Endpoints ────────────────────────────────────────────────────────────────
+
 
 @app.get("/health", response_model=ReponseHealth)
 async def health():
@@ -174,7 +178,6 @@ async def generate(requete: RequeteGeneration):
 
     debut = time.perf_counter()
     try:
-        t_retrieval = time.perf_counter()
         resultat = generer_avec_rag(
             prompt_utilisateur=requete.prompt,
             collection=_state["collection"],
@@ -225,6 +228,7 @@ async def generate(requete: RequeteGeneration):
 
 
 # ── Logging JSONL ─────────────────────────────────────────────────────────────
+
 
 def _logger_requete(
     prompt: str,

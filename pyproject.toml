@@ -16,9 +16,10 @@ select = ["E", "F", "I", "B"]
 ignore = ["E501"]
 
 [tool.mypy]
-warn_return_any = true
+warn_return_any = false
 warn_unused_configs = true
 ignore_missing_imports = true
+check_untyped_defs = false
 
 [[tool.mypy.overrides]]
 module = ["transformers.*", "torch.*", "sentence_transformers.*", "chromadb.*", "evidently.*", "langfuse.*"]

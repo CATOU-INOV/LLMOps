@@ -19,7 +19,7 @@ services:
 
   # ── Langfuse (self-hosted) ────────────────────────────────────────────────
   langfuse:
-    image: langfuse/langfuse:latest
+    image: langfuse/langfuse:2
     depends_on:
       postgres:
         condition: service_healthy

@@ -9,6 +9,6 @@ prometheus-fastapi-instrumentator>=6.1
 prometheus-client>=0.20
 evidently>=0.4
 rouge-score>=0.1.2
-langfuse>=2.0
+langfuse>=2.0,<3.0
 python-dotenv>=1.0
 pandas>=2.0

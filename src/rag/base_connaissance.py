@@ -4,7 +4,6 @@ from pathlib import Path
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-
 CHROMA_PATH = Path(__file__).parent.parent.parent / "data" / "chroma_db"
 COLLECTION_NAME = "faq_service_client"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
@@ -21,11 +20,13 @@ def _charger_faq(chemin: str | Path) -> list[dict]:
 
 
 def creer_base_connaissance(
-    chemin_faq: str | Path = None,
-    chroma_path: str | Path = None,
+    chemin_faq: str | Path | None = None,
+    chroma_path: str | Path | None = None,
     collection_name: str = COLLECTION_NAME,
 ) -> chromadb.Collection:
-    chemin_faq = chemin_faq or Path(__file__).parent.parent.parent / "data" / "faq_service_client.jsonl"
+    chemin_faq = (
+        chemin_faq or Path(__file__).parent.parent.parent / "data" / "faq_service_client.jsonl"
+    )
     chroma_path = chroma_path or CHROMA_PATH
 
     client = chromadb.PersistentClient(path=str(chroma_path))
@@ -56,7 +57,7 @@ def creer_base_connaissance(
 
 
 def get_collection(
-    chroma_path: str | Path = None,
+    chroma_path: str | Path | None = None,
     collection_name: str = COLLECTION_NAME,
 ) -> chromadb.Collection:
     chroma_path = chroma_path or CHROMA_PATH
